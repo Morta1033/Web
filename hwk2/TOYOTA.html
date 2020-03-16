@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav{
+            background-color: #000;
+            text-align: center;
+            margin: auto;
+            height: 70px;
+            width: 100%;
+            top: 0;
+            position: fixed;
+            z-index: 1;
+        }
+        nav a{
+            margin: 10px;
+            padding: 0 55px;
+            display: inline-block;
+            height: 60px;
+            color: #fff;
+            font-size: 16px;
+            
+            text-decoration: none;
+            /* background-color: #f00; */
+        }
+        .title{
+            margin: 70px 0 70px 0;
+        }
+        .title h2{
+            text-align: center;
+            font-size: 35px;
+            padding: 10px;
+            position: relative;
+        }
+        .title h2::after{
+            content: '';
+            position: absolute;
+            width: 40px;
+            border-bottom: 4px solid #000;
+            bottom: 0;
+            left: 48%;
+        }
+        .item_button{
+            width: 970px;
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+
+            /* background-color: #ccc; */
+        }
+        .item_button .box{
+            padding: 18px;
+            width: 190px;
+            line-height: 0.4px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            border: 1px dotted #888;
+            border-bottom: 2px solid #c00;
+            cursor: pointer;
+            
+            /* background-color: #fc0; */
+        }
+        .box:hover{
+            color: #fff;
+            transition: .5s; /* 淡入淡出時間 */
+            background-color: #f50;
+        }
+
+        .wrap{
+            vertical-align: middle;
+        }
+        .item{
+            width: 970px;
+            height: 750px;
+            margin: 150px;
+            position: relative;
+            margin: 100px auto;
+
+            /* background-color: #a70; */
+        }
+        .background{
+            width: 400px;
+            height: 290px;
+            position: absolute;
+            right: 50px;
+            top: 35px;
+            background-color: rgba(220,220,220,.5);
+        }
+        .pic{
+            position: absolute;
+            width: 700px;
+            height: 400px;
+            top: -95px;
+            bottom: -23px;
+            left: 50px;
+            right: 0;
+            margin: auto;
+
+            /* background-color: #f50; */
+        }
+        .info{
+            width: 350px;
+            height: 375px;
+            position: absolute;
+            left: -25px;
+            top: 3px;
+        }
+        .result{
+            width: 700px;
+            height: 250px;
+            position: absolute;
+            bottom: -40px;
+            left: -5px;
+        }
+        .play{
+            width: 57px;
+            height: 36px;
+            position: absolute;
+            bottom: 50%;
+            right: 105px;
+        }
+
+        /* 格式reverse */
+        .background2{
+            width: 490px;
+            height: 420px;
+            position: absolute;
+            right: 200px;
+            top: 61px;
+            background-color: rgba(220,220,220,.5);
+        }
+        .pic2{
+            position: absolute;
+            width: 700px;
+            height: 400px;
+            top: -100px;
+            bottom: -23px;
+            left: 3px;
+            /* right: 0; */
+            margin: auto;
+
+            /* background-color: #f50; */
+        }
+        .info2{
+            width: 350px;
+            height: 375px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .result2{
+            width: 700px;
+            height: 250px;
+            position: absolute;
+            bottom: -35px;
+            right: 0;
+        }
+        .play2{
+            width: 50px;
+            height: 40px;
+            position: absolute;
+            bottom: 50%;
+            left: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">核心理念</a>
+        <a href="#">五大優勢</a>
+        <a href="#">46 THINGS</a>
+        <a href="#">影片演示</a>
+        <a href="#">搭載車款</a>
+    </nav>
+    <div class="title">
+        <h2>五大優勢</h2>
+    </div>
+    <div class="item_button">
+        <div class="box">操控樂趣</div>
+        <div class="box">安全守護</div>
+        <div class="box">乘坐舒適</div>
+        <div class="box">以人為本</div>
+        <div class="box">引以為傲</div>
+    </div>
+    <div class="wrap">
+        <div class="item">
+            <div class="background"></div>
+            <div class="pic"><img src="imgTOYOTA/item_1_video-img.png" alt=""></div>
+            <div class="info"><img src="imgTOYOTA/item_1_info.png" alt=""></div>
+            <div class="result"><img src="imgTOYOTA/item_1_result.png" alt=""></div>
+            <div class="play"><img src="imgTOYOTA/video-icon.png" alt=""></div>
+        </div>
+
+        <div class="item">
+            <div class="background2"></div>
+            <div class="pic2"><img src="imgTOYOTA/item_2_video-img.png" alt=""></div>
+            <div class="info2"><img src="imgTOYOTA/item_2_info.png" alt=""></div>
+            <div class="result2"><img src="imgTOYOTA/item_2_result.png" alt=""></div>
+            <div class="play2"><img src="imgTOYOTA/video-icon.png" alt=""></div>
+        </div>
+        
+        <div class="item">
+            <div class="background"></div>
+            <div class="pic"><img src="imgTOYOTA/item_3_video-img.png" alt=""></div>
+            <div class="info"><img src="imgTOYOTA/item_3_info.png" alt=""></div>
+            <div class="result"><img src="imgTOYOTA/item_3_result.png" alt=""></div>
+            <div class="play"><img src="imgTOYOTA/video-icon.png" alt=""></div>
+        </div>
+        
+        <div class="item">
+            <div class="background2"></div>
+            <div class="pic2"><img src="imgTOYOTA/item_4_video-img.png" alt=""></div>
+            <div class="info2"><img src="imgTOYOTA/item_4_info.png" alt=""></div>
+            <div class="result2"><img src="imgTOYOTA/item_4_result.png" alt=""></div>
+            <div class="play2"><img src="imgTOYOTA/video-icon.png" alt=""></div>
+        </div>
+        
+        <div class="item">
+            <div class="background"></div>
+            <div class="pic"><img src="imgTOYOTA/item_5_video-img.png" alt=""></div>
+            <div class="info"><img src="imgTOYOTA/item_5_info.png" alt=""></div>
+            <div class="result"><img src="imgTOYOTA/item_5_result.png" alt=""></div>
+            <div class="play"><img src="imgTOYOTA/video-icon.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
